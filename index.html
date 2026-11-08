@@ -15,19 +15,19 @@
       <p>Online Tax Services</p>
 
       <nav>
-        <ul>
-            <il><a href="/" >Home</a></il> &nbsp;&nbsp;
-            <il><a href="/Tax Filling">Tax Filling</a></il>&nbsp;&nbsp;
-            <il><a href="/payments">Payments</a></il>&nbsp;&nbsp;
-            <il><a  href="/Support">Support</a></il>&nbsp;&nbsp;
-            <il><a href="/About">About</a></il>&nbsp;&nbsp;
-        </ul>
+        
+            <a href="/" >Home</a> &nbsp;&nbsp;
+            <a href="/Tax Filling">Tax Filling</a>&nbsp;&nbsp;
+            <a href="/payments">Payments</a>&nbsp;&nbsp;
+            <a  href="/Support">Support</a>&nbsp;&nbsp;
+            <a href="/About">About</a>&nbsp;&nbsp;
+       
       </nav>
      
       <br>
       <form>
         <label for="serach">Search the portal</label>
-      <input type="text" name="serach" placeholder="e.g VAT retutn"> 
+      <input type="text" id="serach" name="serach" placeholder="e.g VAT retutn"> 
       <button type="submit">Search</button></form>
 
       </div>
@@ -119,6 +119,58 @@
     <progress id="review" max="200" value="160"></progress>
     
     </div>
+   </section>
+
+   <br><br>
+
+  
+   <section>
+    <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px;">
+    <h2>Register a Payment</h2>
+
+    <form>
+      <fieldset>
+        <!-- <h3>Personal details</h3> -->
+
+         <legend> <h3>Payment details </h3> </legend>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName">
+        <br> <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </fieldset>
+
+      <fieldset>
+        <!-- <h3>Payment details</h3> -->
+
+        <label for="amount">Amount(OMR)</label>
+        <input type="number" id="amount" name="amount" step="0.01" required>
+        <small> Enter the amount in Omani Rials, up to two decimal places.</small>
+        <br> <br>
+
+        <legend> <h3>Payment details </h3></legend>
+        <label for="tax">Tax Type</label>
+        <select name="tax" id="tax">
+          <option value="vat">VAT</option>
+          <option value="cit" default>CIT</option>
+          <option value="pit">PIT</option>
+        </select>
+      </fieldset>
+
+      <!-- <fieldset> -->
+        
+        
+        <input type="checkbox" id="co" name="co" required>
+        <label for="co">I confirm the information above is accurate </label>
+        <!-- </fieldset> -->
+         <br><br>
+
+      <button type="submit">Submit Payment</button>
+      <button type="reset">Clear Form</button>
+
+    </form>
+  </div>
    </section>
 
    <br><br>

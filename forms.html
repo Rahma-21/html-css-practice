@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <title>Forms</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+    <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px;">
+        <h1>Taxpayer Portal</h1>
+         <p>Online Tax Services</p>
+
+         <nav>
+            
+               <a href="/">Home</a>&nbsp;&nbsp;
+                <strong><a href="/">Tax Filling</a></strong>&nbsp;&nbsp;
+                <a href="/">Payments</a>&nbsp;&nbsp;
+                <a href="/">Support</a>&nbsp;&nbsp;
+            
+         </nav>
+          <br>
+         <form>
+            <label for="serach">Search the portal</label><br>
+            <input type="text" id="serach" name="serach" placeholder="e.g VAT retutn">
+            <button type="submit">Search</button>
+         </form>
+    </div></header>
+
+     <br><br>
+     
+     <main>
+    <article>
+    <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px;">
+     <h2>Tax Filing Practice</h2>
+     <p>Work through the forms in order. They begin with basic text inputs and finish with a more complete tax return.</p>
+     <p><strong>Learning goal:</strong>  notice how labels, names, values, validation, and grouped controls work together.</p>
+
+
+    </div>
+    </article>
+    <br><br>
+
+    <section>
+        <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px;">
+         <form>
+            <h2>1. Taxpayer Contact</h2>
+            <p>A simple form using text, email, telephone, and submit controls.</p>
+           
+            <div>
+           <label for="fullName">Full Name</label><br>
+           <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+           </div><br>
+
+            <div>
+           <label for="email">Email</label><br>
+           <input type="email" id="email" name="email" placeholder="Enter your email" required>
+           </div><br>
+
+
+            <div>
+           <label for="tel">Telephone</label><br>
+           <input type="tel" id="tel" name="phone" placeholder="+986 12345678" required>
+           </div><br>
+           
+           <button type="submit">Save contact</button>
+
+         </form>
+
+        </div>
+    </section>
+
+    <section>
+         <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px;">
+         
+        <form>
+        <h2>2. Choose a Return</h2>
+        <p>This form adds select menus, dates, radio buttons, and grouped controls.</p>
+         <br>
+         <fieldset>
+            <legend><h3>Filing details</h3></legend>
+            <label for="type">Tax Type</label><br>
+            <select id="type">
+                <option>Choose a text type...</option>
+                <option value="vat">VAT</option>
+                <option value="CIT" >CIT</option>
+                <option value="pit">PIT</option>
+            </select>
+          
+            <br><br>
+            <label for="date">Period Ending</label><br>
+            <input type="date"  id="date" name="date">
+         </fieldset>
+         
+         <fieldset>
+            <legend><h3>Return Frequency</h3></legend>
+
+            <input type="radio" id="rf" name="rf" value="Monthly">
+            <label for="rf">Monthly</label><br>
+
+            <input type="radio" id="rf" name="rf" value="quarterly">
+            <label for="rf">Quarterly</label><br>
+
+            <input type="radio" id="rf" name="rf" value="annual">
+            <label for="rf">Annual</label><br>
+         </fieldset>
+         <br>
+         <button type="submit" >Continue</button>
+        
+        </form>
+         </div>
+    </section>
+ <br>
+
+        <section>
+          <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px;">
+         
+            <form>
+             <h2>3. Income and Deductions</h2>
+             <p>This form introduces number inputs, a datalist, a range control, a textarea, and calculated output.</p>
+
+        <fieldset>
+           <legend><h3>Tax calculation </h3></legend>
+
+            <div>
+           <label for="income">Gross income (OMR)</label><br>
+           <input type="number" id="income" name="grossIncome" required>
+           </div><br>
+
+           <div><br>
+           <label for="deductions">Allowable deductions (OMR)</label><br>
+           <input type="number" id="deductions" name="deductions" required>
+           </div>
+        </fieldset>
+           <br>
+
+           <div>
+           <label for="con">Confidence</label><br>
+           <input type="number" id="con" name="con" min="1" max="10" step="1" required><br>
+           <small>Confidence in this estimate (1-10)</small>
+           </div>
+           <br><br>
+
+           <label for="notes">Calculation notes</label><br>
+           <textarea id="notes" name="notes" rows="6" cols="60" placeholder="Write your calculations notes here..."></textarea><br><br>
+           <button type="submit">Save calculation</button>
+            </form>
+            
+        </section>
+
+
+
+        
+        <section>
+          <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px;">
+           <form>
+                <h2>4. Complete and Submit</h2>
+                 <p>The final combines document upload, checkboxes, month and time controls, a declaration, and reset and submit actions.</p>
+                <br>
+            
+                 <fieldset>
+                   <legend><h3>Supporting records</h3></legend>
+                    <br>
+                     
+                    <div>
+                    <label for="ACmonth">Accounting month </label><br>
+                    <input type="month" id="ACmonth" name="ACmonth">
+
+                    <br>
+                   <label for="upload"> <h3>Upload supporting doucments</h3></label>
+                   <input type="file" id="upload" name="upload" accept=".pdf, .csv, .jpg, .png" multiple><br>
+                   <small>Accepted examples: PDF,CSV,JPG, or PNG.</small><br>
+                   <br>
+                   Recordes Included:
+                   <br>
+                   <input type="checkbox" id="sales" name="sales" value="sales">
+                   <label for="sales">Sales invoices</label>
+                   <br>
+                   <input type="checkbox" id="expense" name="expense" value="expense">
+                   <label for="expense">Expense receipts</label>
+                   <br>
+                   <input type="checkbox" id="bank" name="bank" value="bank">
+                   <label for="bank">Bank statement</label>
+                   <br>
+                   
+                </div>
+                 </fieldset>
+
+                 <br>
+                 <fieldset>
+                    <div>
+                       <legend><h3>Declaration</h3></legend> 
+                        
+
+                        <label for="fName">Type your full name as a signature</label><br>
+                        <input type="text" id="fName" name="fullName" required>
+                        <br><br>
+                        <label for="time">Time Signed</label><br>
+                        <input type="time" id="time" name="time">
+                        <br><br>
+
+                        <input type="checkbox" id="confirm" name="confirm" required>
+                        <label for="confirm">I confirm that the information in this practice return is accurate.</label>
+
+                    </div>
+                 </fieldset>
+
+                 <br>
+                 <button type="submit">Submit practice return</button>
+                 <button type="reset">Clear form</button>
+
+           </form>
+
+
+          </div>
+        </section>
+
+
+</main>
+</body>
+
+</html>
