@@ -1,0 +1,116 @@
+* {
+    --primary-color:#1A4E8A;
+    }
+
+body, h1, h2, h3, h4, p {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia;
+}
+img {
+    width: 100%;
+}
+
+.container {
+    margin: 36px auto;  
+    max-width: 800px;
+    padding: 0 auto;
+     /* margin: 36px auto;  هذي طريقة نسويه بدل نحدد فوق تحت يمين يسار  */
+    /* 36px يحدد فوق و تحت margin: ; */
+    /* auto لل يمين ويسار */
+    /* في ملاحظه */
+    background-color: #f4f6f9;
+    }
+
+.header {
+    color: #fff;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    /* padding: 24px 24px 16px 24px; the same as above */
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    /* border: 0 0 8px 8px; */
+    background-color: #1A4E8A;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    color: #f4f6f9;
+
+}
+
+.p{
+    margin-top: 10px;
+    font-weight: 400;
+    font-style: Italic;
+    font-size: 15.2px;
+    line-height: 25.84px;
+    letter-spacing: 0px;
+    color: #C8D8EF;
+}
+
+header nav{
+    margin-top: 20px;
+
+}
+
+header a {
+   
+    margin-right: 8px;
+    padding: 6px 12px;
+    color: white;
+    background-color:#2A6AB5;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+header a:hover{
+    background-color: #2360a5;
+}
+
+.line{
+    margin-top:15px ;
+    margin-bottom: 30px;
+    height: 1px;
+    background-color: #2A6AB5;
+}
+
+
+.search-label{
+    color: #C8D8EF;
+    width: 852;
+    height: 24;
+
+
+}
+
+.search-input{
+    margin-top: 25px;
+    padding: 12px 5px;
+    border-radius: 4px 0 0 4px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+
+}
+
+.search-button{
+    border: none;
+    padding: 24px 10px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    background: none;
+}
+
+
+/* input::placeholder{
+    color:blue;
+} */
