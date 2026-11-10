@@ -4,6 +4,8 @@
     <title>Practice HTML</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="theme.css" />
   </head>
 
   <body>
@@ -39,11 +41,9 @@
         </div>
       </header>
 
-      <br /><br />
-
       <main>
-        <section>
-          <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px">
+        <section class="Welcome">
+          <div>
             <h2>Welcome to the page</h2>
 
             <p>
@@ -61,30 +61,28 @@
                 return.
               </mark>
             </p>
-            <br />
-            <p>Filing types include <u>VAT</u>, <u>CIT</u>, and <u>PIT</u>.</p>
-            <br />
+
+            <p class="p-underline">
+              Filing types include <u>VAT</u>, <u>CIT</u>, and <u>PIT</u>.
+            </p>
 
             <figure>
               <img
-                src="Screenshot 2026-11-04 095130.png"
+                class="fig"
+                src="Image - Illustration of a digital tax filing dashboard with charts and documents.png"
                 alt="pic"
                 width="800"
                 height="400"
               />
-              <figcaption>
+              <figcaption class="img-tx">
                 Figure 1: Overview of the taxpayer dashboard
               </figcaption>
             </figure>
           </div>
         </section>
 
-        <br />
-        <br />
-        <br />
-
-        <article>
-          <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px">
+        <article class="ann-article">
+          <div>
             <h2>Announcement: VAT Filing Deadline Extended</h2>
 
             <p>
@@ -104,20 +102,17 @@
             </figure>
 
             <!-- <footer><p >Published: 20 July 2026</p></footer> -->
-            <footer>
+            <footer class="ann-footer">
               Published:<time datetime="2026-07-20">20 July 2026</time>
             </footer>
           </div>
         </article>
 
-        <br />
-        <br />
-
-        <section>
-          <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px">
+        <section class="table-f">
+          <div>
             <h2>Recent Filing Types</h2>
 
-            <p>Filing status for the current period</p>
+            <p class="table-p">Filing status for the current period</p>
 
             <table
               style="width: 100%"
@@ -131,36 +126,40 @@
                 <th>Satuts</th>
               </tr>
               <tr>
-                <td><strong>VAT</strong></td>
+                <td class="data-blue"><strong>VAT</strong></td>
                 <td>Q2 2026</td>
                 <td>Submitted</td>
               </tr>
               <tr>
-                <td><strong>CIT</strong></td>
+                <td class="data-blue"><strong>CIT</strong></td>
                 <td>2025 Annual</td>
                 <td>Pending</td>
               </tr>
               <tr>
-                <td><strong>PIT</strong></td>
+                <td class="data-blue"><strong>PIT</strong></td>
                 <td>2025 Annual</td>
                 <td>Draft</td>
               </tr>
             </table>
-            <br />
-            <label for="filing">Overall filing completion this quarter:</label>
-            <progress id="filing" max="200" value="140"></progress>
-            <br /><br />
-            <label for="review"
-              >Average review score for submitted filings:
-            </label>
-            <progress id="review" max="200" value="160"></progress>
+
+            <div class="progress-p">
+              <label for="filing"
+                >Overall filing completion this quarter:</label
+              >
+              <progress id="filing" max="200" value="140"></progress>
+            </div>
+
+            <div class="progress-p">
+              <label for="review">
+                Average review score for submitted filings:</label
+              >
+              <progress id="review" max="200" value="160"></progress>
+            </div>
           </div>
         </section>
 
-        <br /><br />
-
         <section>
-          <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px">
+          <div>
             <h2>Register a Payment</h2>
 
             <form>
@@ -192,8 +191,6 @@
                   Enter the amount in Omani Rials, up to two decimal
                   places.</small
                 >
-                <br />
-                <br />
 
                 <legend><h3>Payment details</h3></legend>
                 <label for="tax">Tax Type</label>
@@ -204,13 +201,11 @@
                 </select>
               </fieldset>
 
-              <!-- <fieldset> -->
-
               <input type="checkbox" id="co" name="co" required />
               <label for="co"
                 >I confirm the information above is accurate
               </label>
-              <!-- </fieldset> -->
+
               <br /><br />
 
               <button type="submit">Submit Payment</button>
@@ -220,7 +215,7 @@
         </section>
 
         <br /><br />
-        <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px">
+        <div>
           <nav>
             <h2>Quick Links</h2>
 
@@ -257,7 +252,7 @@
 
         <br /><br />
         <footer>
-          <div style="border: 1px solid rgba(0, 0, 0, 0.274); padding: 20px">
+          <div>
             <p>&copy; 2026 Taxpayer Portal. All rights reserved.</p>
 
             Support:
