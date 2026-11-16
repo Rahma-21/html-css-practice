@@ -3,9 +3,9 @@
   <head>
     <title>Practice HTML</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -175,12 +175,13 @@
                   id="fullName"
                   name="fullName"
                   class="fullName"
+                  required
                 />
                 <br />
                 <br />
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" />
+                <input type="email" id="email" name="email" required />
               </fieldset>
 
               <fieldset>
@@ -201,26 +202,29 @@
 
                 <legend><h3>Payment details</h3></legend>
                 <label for="tax">Tax Type</label>
-                <select name="tax" id="tax">
+                <select name="tax" id="tax" required>
                   <option>---Select options---</option>
                   <option value="vat">VAT</option>
                   <option value="cit" default>CIT</option>
                   <option value="pit">PIT</option>
                 </select>
               </fieldset>
+              <div class="confirm">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="co"
+                  name="co"
+                  required
+                />
+                <label for="co">
+                  I confirm the information above is accurate
+                </label>
+              </div>
 
-              <input
-                class="checkbox"
-                type="checkbox"
-                id="co"
-                name="co"
-                required
-              />
-              <label for="co"
-                >I confirm the information above is accurate
-              </label>
               <br />
-              <button type="submit">Submit Payment</button>
+
+              <button type="submit" disabled>Submit Payment</button>
               <button type="reset">Clear Form</button>
             </form>
           </div>

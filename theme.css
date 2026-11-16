@@ -8,4 +8,24 @@
   --font-style: Italic;
 
   --color-bg: #f4f6f9;
+
+  --border-color: #c0d0e8;
+
+  --light-bg: #f8faff;
+
+  --quick-bg: #eef3fb;
+
+  --text-color: #333333;
+
+  --muted-color: #666666;
+
+  --success-bg: #d4edda;
+
+  --success-color: #276139;
+
+  --danger-color: #ff6b6b;
+
+  --hover-color: #2360a5;
+
+  --disabled-bg: #bdbdbd;
 }
