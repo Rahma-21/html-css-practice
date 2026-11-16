@@ -158,17 +158,24 @@
           </div>
         </section>
 
-        <section>
+        <section class="register-payment">
           <div>
             <h2>Register a Payment</h2>
 
-            <form>
+            <!-- <div class="payment-secure">Secure</div> -->
+
+            <form class="payment">
               <fieldset>
                 <!-- <h3>Personal details</h3> -->
 
                 <legend><h3>Payment details</h3></legend>
                 <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" />
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  class="fullName"
+                />
                 <br />
                 <br />
 
@@ -195,34 +202,42 @@
                 <legend><h3>Payment details</h3></legend>
                 <label for="tax">Tax Type</label>
                 <select name="tax" id="tax">
+                  <option>---Select options---</option>
                   <option value="vat">VAT</option>
                   <option value="cit" default>CIT</option>
                   <option value="pit">PIT</option>
                 </select>
               </fieldset>
 
-              <input type="checkbox" id="co" name="co" required />
+              <input
+                class="checkbox"
+                type="checkbox"
+                id="co"
+                name="co"
+                required
+              />
               <label for="co"
                 >I confirm the information above is accurate
               </label>
-
-              <br /><br />
-
+              <br />
               <button type="submit">Submit Payment</button>
               <button type="reset">Clear Form</button>
             </form>
           </div>
         </section>
+        <br />
 
-        <br /><br />
-        <div>
+        <!-- <div class="final-info"> -->
+        <div class="final-info">
           <nav>
             <h2>Quick Links</h2>
 
             <ul>
               <li><a href="/VAT return">How to file a VAT return</a></li>
               <li><a href="/Payment">Payment methods accepted</a></li>
-              <li><a href="/tax certificates">Download tax certificates</a></li>
+              <li>
+                <a href="/tax certificates">Download tax certificates</a>
+              </li>
               <li><a href="/support agent">Contact a support agent</a></li>
             </ul>
           </nav>
@@ -250,15 +265,15 @@
           </section>
         </div>
 
-        <br /><br />
         <footer>
           <div>
             <p>&copy; 2026 Taxpayer Portal. All rights reserved.</p>
 
             Support:
-            <a href="mailto:support@example.com">support@example.com</a> &nbsp;
-            | &nbsp; Phone:<a href="tel:+968 1234 5678">+968 1234 5678</a>
-            <br /><br />
+            <a href="mailto:support@example.com">support@example.com</a>
+            &nbsp; | &nbsp; Phone:<a href="tel:+968 1234 5678"
+              >+968 1234 5678</a
+            >
 
             <nav>
               <a href="/">Privacy Policy</a> &nbsp;&nbsp;
@@ -267,6 +282,7 @@
             </nav>
           </div>
         </footer>
+        <!-- </div> -->
       </main>
     </div>
   </body>
